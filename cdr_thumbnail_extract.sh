@@ -11,7 +11,7 @@ __file="${__dir}/$(basename "${BASH_SOURCE[0]}")"
 __base="$(basename "${__file}" .sh)"
 
 for f in *.cdr; do
-	basename=`basename $f .cdr`
+	basename=`basename "$f" .cdr`
 	echo Extrahiere Thumbnail aus $basename.cdr...
 	set +e
 	unzip $basename.cdr previews/thumbnail.png &> /dev/null
