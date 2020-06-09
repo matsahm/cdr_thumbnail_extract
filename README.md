@@ -1,0 +1,1 @@
+# cdr_thumbnail_extract
