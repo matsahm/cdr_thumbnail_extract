@@ -25,4 +25,6 @@ for f in *.cdr; do
 	echo ' '
 done
 
-rmdir previews
+if [ -f previews ]; then
+	rmdir previews
+fi
